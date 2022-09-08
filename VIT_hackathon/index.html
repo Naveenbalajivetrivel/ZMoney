@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir = "ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Loan Application Form</title>
+        <link rel = "stylesheet" href="style.css">
+        <meta name = "viewport" content="width=device-width,initial-scale = 1.0">
+        <style>
+            .center {
+  margin: auto;
+  width: 60%;
+  border: 1.5px solid black;
+  padding: 10px;
+  background-color: white;
+}
+.center1 {
+  margin: auto;
+  width: 60%;
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 30px;
+}
+.input-box input{
+    width: 90%;
+}
+.details{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+        </style>
+    </head>
+<body>
+<div class="center">
+    <div class="center1"><strong>Loan Application Form</strong></div><br>
+    <form action = "login.html">
+        <div class="user.details">
+            <div class="input-box">
+                <span class="details">Full Name :</span>
+                <input type="text" placeholder="Enter your name" required>
+            </div><br>
+            <div class="input-box">
+                <span class="details">Phone No. :</span>
+                <input type="number" placeholder="Enter your Phone No." required>
+            </div><br>
+            <div class="input-box">
+                <span class="details">Email :</span>
+                <input type="text" placeholder="Enter your Email" required>
+            </div><br>
+            <div class="input-box">
+                <span class="details">Password :</span>
+                <input type="text" placeholder="Enter your Password" required>
+            </div><br>
+            <div class = "Categorical">
+                <span class = "details">Gender :</span><input type = "radio" name="Gender" value = "Male">Male
+        <input type = "radio" name = "Gender" value = "Female">Female
+            </div><br>
+            <div class="input-box">
+                <span class="details">
+                    Date Of Birth :
+                </span>
+                <input type="date" placeholder="dd/mm/yyyy" required>
+            </div><br>
+            <div class="input-box">
+                <span class="details">
+                    Account No. :
+                </span>
+                <input type="number" placeholder="Account No." required>
+            </div><br>
+            <div class="input-box">
+                <span class="details">
+                    Loan Type
+                </span>
+                <select name="Loan Type :" id="lType">
+                    <option value="select"></option>
+                    <option value="Personal Loan">Personal Loan</option>
+                    <option value="Home Loan">Home Loan</option>
+                    <option value="Educational Loan">Educational Loan</option>
+                    <option value="Business Loan">Business Loan</option>
+                    <option value="Gold Loan">Gold Loan</option>
+                  </select>
+            </div><br>
+        </div>
+        
+        <div class = "button">
+            <input type = "Submit" value="Submit"><br>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
